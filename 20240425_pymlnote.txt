@@ -1,0 +1,57 @@
+Python Macine Learning Day1
+Date: 2024/04/25 GMT+8 20:00
+Source1: https://github.com/rasbt/python-machine-learning-book-3rd-edition/blob/master/ch01/README.md
+Source2: https://linux.vbird.org/linux_basic/centos7/0340bashshell-scripts.php
+
+Part 1. Environment Setting
+[Windows]
+1. Download Python install file from https://www.python.org
+2. Install file
+3. Checking Python Version
+3-1. [Windows Terminal] python -V or python --version
+3-2. [Windows Terminal] (Layout) Python 3.12.2
+4. (pip update) pip3 install -upgrade pip
+
+[WSL Ubuntu]
+1. [Windows Terminal] wsl
+2. [WSL Terminal] sudo apt update
+3. [WSL Terminal] sudo apt upgrade
+4. [WSL Terminal] sudo apt install python3
+4-1. [WSL Terminal] (Probability Problem) sudo apt install python3-update-manager
+4-2. [WSL Terminal] (Probability Problem) sudo apt install update-manager-core
+5. [WSL Terminal] python -V or python --version
+6. [WSL Terminal] sudo apt install python3-pip
+
+Part 2. pip package install and package update
+1. pip install
+(1) [Terminal]  pip install NumPy
+(2) [Terminal]  pip install SciPy
+(3) [Terminal]  pip install scikit-learn
+(4) [Terminal]  pip install matplotlib
+(5) [Terminal]  pip install pandas
+
+2.pip upgrade
+(1) [Terminal]  pip install NumPy --upgrade
+(Ignore)
+
+Part 3. Jupyter notebook install
+1. [Terminal] pip install jupyter notebook
+1-1. [WSL Terminal] (Linux only) (Probability Problem) sudo apt install jupyter-core
+2. [Terminal] jupyter notebook
+
+Part 4. Acaconda Environment Setting
+[Windows]
+1. Download file from https://www.anaconda.com/download/success
+2. Install file
+
+[WSL Ubuntu]
+1. [WSL Terminal] wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+2. [WSL Terminal] ./Anaconda3-2024.02-1-Linux-x86_64.sh
+
+Part 5. Jupyter  Lab
+[Windows]
+1. [Windows Terminal] jupyterlab
+
+[WSL Ubuntu]
+1. [WSL Terminal] conda install -c conda-forge jupyterlab
+2. [WSL Terminal] jupyterlab
